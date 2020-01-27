@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DC000000"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <include layout="@layout/bar"
+        android:id="@+id/toolbar"
+        >
+    </include>
+
+
+       <EditText
+        android:id="@+id/EditItem"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="Enter List"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+    <ListView
+        android:id="@+id/Listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem=""
+        android:background="@color/DarkGray" />
+
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="65dp"
+        android:text="ADD" />
+
+
+
+</RelativeLayout>
